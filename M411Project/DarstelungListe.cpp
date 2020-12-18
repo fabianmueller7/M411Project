@@ -4,6 +4,7 @@
 
 
 int auswahl;
+int anzahl;
 int groesse;
 bool listeExestiert = false;
 int Liste[1000000];
@@ -67,7 +68,12 @@ void auswahl_treffen()
 		if (listeExestiert)
 		{
 			system("cls");
-			printf("<Liste>\n");
+			printf("Wie viele Elemente sollen ausgegeben werden?\n");
+			scanf_s("%i", &anzahl);
+			for(int i = 0; i< groesse; i++)
+			{
+				printf_s("%c\t%f", bez, preis);
+			}
 		}
 		else
 		{
